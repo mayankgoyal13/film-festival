@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Festival</title>
+    <script src="./js/page3.js" defer></script>
+    <link rel="stylesheet" href="./css/page3-styles.css" />
+    <link rel="icon" href="assets/favicon1.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <h1 class="main_heading">The Most Awaited Film Festival is Here !!</h1>
+    </header>
+    <main>
+      <h1 class="logo">NETFLIX FILM FESTIVAL</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#movie-events">Lauch Events</a></li>
+          <li><a href="index.html#guests">Guests</a></li>
+          <li><a href="index.html#venue">Venue</a></li>
+          <li><a href="#">Schedule</a></li>
+        </ul>
+      </nav>
+    </main>
+    <section class="paymentFormSection" id="paymentFormSection">
+      <div class="paymentFormContainer">
+        <h2>Payment Details</h2>
+        <div>
+          <label for="ticketType">Select Ticket Type </label>
+          <select name="ticketType" id="ticketType">
+            <option value="">-- Select Ticket--</option>
+            <option value="one-day-pass">One Day Pass</option>
+            <option value="all-day-pass">All Day Pass</option>
+            <option value="vip-pass">VIP Pass</option>
+          </select>
+          <p id="ticketTypeError"></p>
+        </div>
+        <div class="form-row">
+          <div class="input-data">
+            <label for="ticketQty">Number of Tickets</label>
+            <input type="text" required id="ticketQty" />
+            <p id="ticketQtyError"></p>
+          </div>
+          <div class="input-data">
+            <label for="cardDetails">Card Number</label>
+            <input type="text" required id="cardDetails" />
+            <p id="cardDetailsError"></p>
+          </div>
+        </div>
+
+        <div class="btnContainer">
+          <button class="payNowBtn" id="payNowBtn">Pay Now</button>
+        </div>
+      </div>
+    </section>
+    <section class="orderSummary" id="orderSummary"></section>
+    <footer style="padding-top: 10vh">
+      <div>
+        <a href="#"><img src="assets/social_media_icons/733547.png" alt="" /></a>
+        <a href="#"><img src="assets/social_media_icons/insta.png" alt="" /></a>
+        <a href="#"><img src="assets/social_media_icons/twitter.png" alt="" /></a>
+        <a></a>
+      </div>
+      <p>NFF,NETFLIX</p>
+      <p>© All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
